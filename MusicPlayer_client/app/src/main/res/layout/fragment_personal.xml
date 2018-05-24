@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:textSize="10pt" />
+
+    <Button
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:id="@+id/btnChangePass"
+        android:gravity="left"
+        android:background="@drawable/button_bg"/>
+
+
+    <Button
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        android:gravity="left"
+        android:id="@+id/btnSignOut"
+        android:background="@drawable/button_bg"/>
+
+
+    <fragment
+        android:id="@+id/frag_listPlaylist"
+        android:name="vntd.demo.musicplayer_client.activities.ListPlaylistFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+</LinearLayout>
